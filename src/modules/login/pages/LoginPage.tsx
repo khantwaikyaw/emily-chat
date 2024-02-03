@@ -14,4 +14,4 @@ export const LoginPage: React.FC = () => {
 	);
 };
 
-LoginPage.displayName = 'DepartmentListingPage';
+LoginPage.displayName = 'LoginPage';

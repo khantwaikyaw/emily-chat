@@ -1,12 +1,12 @@
 import React from 'react';
-import { AppShell, Card, Group, Image } from '@mantine/core';
+import { AppShell, Card, Group, Image, Title } from '@mantine/core';
 import emilyhub from '@assets/images/emilyhub.jpg';
 import { getImageUrl } from '@utils';
 
 const brandLogo: string = getImageUrl(emilyhub);
 const BrandImage: React.FC = () => (
 	<Image
-		alt="Emilyu"
+		alt="Emily"
 		src={brandLogo}
 		radius={10}
 		h={60}
@@ -23,6 +23,7 @@ export const NavbarHeader: React.FC = () => (
 			<Card.Section>
 				<Group p="xs" grow wrap="nowrap">
 					<BrandImage />
+					<Title order={3}>Emily</Title>
 				</Group>
 			</Card.Section>
 		</Card>
