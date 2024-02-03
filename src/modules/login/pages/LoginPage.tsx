@@ -1,15 +1,11 @@
 import React from 'react';
-import { Button, Center, Stack, Text } from '@mantine/core';
-import { type NavigateFunction, useNavigate } from 'react-router-dom';
+import { Center } from '@mantine/core';
+import { LoginForm } from '@modules/login/features';
 
 export const LoginPage: React.FC = () => {
-	const navigate: NavigateFunction = useNavigate();
 	return (
-		<Center h="100vh">
-			<Stack>
-				<Text>Here is Login</Text>
-				<Button onClick={() => navigate('/auth/departments')}>Login</Button>
-			</Stack>
+		<Center h="100svh" style={{ border: '1px solid yellow' }}>
+			<LoginForm />
 		</Center>
 	);
 };

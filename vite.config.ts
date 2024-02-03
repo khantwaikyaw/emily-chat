@@ -17,6 +17,7 @@ const paths: Array<string> = [
 	'modules',
 	'providers',
 	'types',
+	'router',
 	'utils',
 ];
 

@@ -1,1 +1,1 @@
-export * from './AppRouter.tsx';
+export * from './mantine/theme.ts';

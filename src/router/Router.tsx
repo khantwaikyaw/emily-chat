@@ -1,11 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { RootLayout } from '@layouts/RootLayout.tsx';
-import { LoginPage } from '@modules/login/pages/LoginPage.tsx';
-import { AuthenticatedLayout } from '@layouts';
-import { ChatPage } from '@modules/chat/pages/ChatPage.tsx';
 import { routes } from '@configs';
+import { AuthenticatedLayout, RootLayout } from '@layouts';
+import { LoginPage } from '@modules/login/pages';
+import { ChatPage } from '@modules/chat/pages';
 
-export const AppRouter = createBrowserRouter([
+export const Router = createBrowserRouter([
 	{
 		path: '/',
 		element: <RootLayout />,
