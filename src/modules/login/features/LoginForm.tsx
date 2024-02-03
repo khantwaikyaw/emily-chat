@@ -5,11 +5,12 @@ import { useForm } from '@mantine/form';
 export const LoginForm: React.FC = () => {
 	const form = useForm();
 	return (
-		<form style={{ border: '1px solid green' }}>
-			<Stack bg="blue">
+		<form>
+			<Stack>
 				<TextInput
 					label="Username"
 					description="Type your username."
+					withAsterisk
 					// hideControls
 					maxLength={6}
 					{...form.getInputProps('username')}

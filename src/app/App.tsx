@@ -8,7 +8,7 @@ import { Router } from '@router';
 function App(): React.ReactNode {
 	return (
 		<>
-			<MantineProvider withCssVariables theme={theme}>
+			<MantineProvider theme={theme}>
 				<RouterProvider router={Router} />
 			</MantineProvider>
 		</>
