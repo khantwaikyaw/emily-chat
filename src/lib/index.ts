@@ -1,1 +1,1 @@
-export * from './mantine/theme.ts';
+export * from './mantine/configs.ts';

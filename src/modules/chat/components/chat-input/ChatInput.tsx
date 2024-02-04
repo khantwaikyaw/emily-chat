@@ -13,7 +13,7 @@ export const ChatInput: React.FC = () => {
 				<ActionIcon
 					size={32}
 					radius="xl"
-					// color={theme.primaryColor}
+					// color={configs.primaryColor}
 					variant="filled"
 				>
 					<IconArrowRight
