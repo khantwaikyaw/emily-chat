@@ -16,8 +16,8 @@ const paths: Array<string> = [
 	'lib',
 	'modules',
 	'providers',
-	'types',
 	'router',
+	'types',
 	'utils',
 ];
 
@@ -28,7 +28,7 @@ interface Aliases {
 const aliases: object = paths.reduce(
 	(prevValue: object, currentValue: string): Aliases => ({
 		...prevValue,
-		['~']: resolvePath('src/'),
+		// ['~']: resolvePath('src/'),
 		[`@${currentValue}`]: resolvePath(`./src/${currentValue}`),
 	}),
 	{},
